@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--SHORTCUT ICON-->
+    <link rel="shortcut icon" href="#" />
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Niconne&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!--NAV-->
+<nav>
+    <a href="javascript:{}" class="flex menu" onclick="nav()"><img src="https://i.postimg.cc/Vv7xdSY0/00.png" alt=""></a>
+    <a href="#" class="flex active"><img src="https://i.postimg.cc/nLBf0c1N/01.png" alt=""><sub class="info">Home</sub></a>
+    <a href="#" class="flex"><img src="https://i.postimg.cc/SN14KPs1/02.png" alt=""><sub class="info">Recent Places</sub></a>
+    <a href="#" class="flex"><img src="https://i.postimg.cc/htHqL7V9/03.png" alt=""><sub class="info">Destination</sub></a>
+    <a href="#" class="flex"><img src="https://i.postimg.cc/Xq7MjK00/04.png" alt=""><sub class="info">Blog</sub></a>
+    <a href="#" class="flex"><img src="https://i.postimg.cc/sXJdC6qc/05.png" alt=""><sub class="info">Contact Us</sub></a>
+    <a href="#" class="flex"><img src="https://i.postimg.cc/DZhkDkj0/06.png" alt=""><sub class="info">About Us</sub></a>
+</nav>
+
+<!--MAIN-->
+<main class="flex">
+    <article class="padding_5x">
+        <img src="Black_Illustrated_Travel_Logo__1_-removebg-preview.png" class="logo" alt="Travelling">
+        <h1 class="title">Make Your Tour <br><span class="stroke">Amazing</span> With Us</h1>
+        <span class="icons flex">
+            <a href="#" class="shape flex" title="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="shape flex" title="Instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="shape flex" title="Youtube"><i class="fa fa-youtube"></i></a>
+            <a href="#" class="shape flex" title="Twitter"><i class="fa fa-twitter"></i></a>
+        </span>
+    </article>
+</main>
+
+<!--SECTIONS-->
+<!--SECTION1-->
+<div class="section1">
+    <section>
+        <form class="flex padding_1x" id="travelForm">
+            <select name="budget" id="budget" class="padding_1x flex-content">
+                <option value="">Budget</option>
+                <option value="1000-5000">1000-5000</option>
+                <option value="5000-10000">5000-10000</option>
+                <option value="10000-20000">10000-20000</option>
+                <option value="1lakh-2lakh">1lakh-2lakh</option>
+                <option value="2lakh-4lakh">2lakh-4lakh</option>
+            </select>
+            <select name="destination" id="destination" class="padding_1x flex-content">
+                <option value="">Destination</option>
+            </select>
+            <select name="activities" id="activities" class="padding_1x flex-content">
+                <option value="">Activities</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Culture">Culture</option>
+                <option value="Relaxation">Relaxation</option>
+                <option value="Nature">Nature</option>
+                <option value="Sightseeing">Sightseeing</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Gastronomy">Gastronomy</option>
+                <option value="Beach">Beach</option>
+            </select>
+            <button class="padding_1x flex-content btn1" type="button" onclick="getSuggestions()">Get Suggestion</button>
+        </form>
+        <div id="suggestions" class="padding_1x"></div>
+    </section>
+</div>
+
+<!--SECTION2-->
+<div class="section2 flex">
+    <section class="flex-content padding_2x">
+        <span class="tag inline-photo show-on-scroll">Explore with us</span>
+        <h1 class="sub-title">Find your next <em>place</em> to visit</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        <a href="#" class="btn2">Top Destinations <i class="fa fa-paper-plane"></i></a>
+    </section>
+    <section class="flex-content padding_2x">
+        <img src="https://i.postimg.cc/YqdrW9X3/01.jpg" alt="" class="text inline-photo3 show-on-scroll3">
+    </section>
+</div>
+
+<!--SECTION3-->
+<div class="section3 flex padding_1x">
+    <section class="flex-content padding_1x inline-photo show-on-scroll">
+        <figure>
+            <img src="https://i.postimg.cc/Y2bKXP12/01.jpg" alt="">
+            <article>
+                <span class="padding_1x">
+                    <h2 class="cursive">Hotels</h2>
+                    <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </span>
+            </article>
+        </figure>
+    </section>
+    <section class="flex-content padding_1x inline-photo show-on-scroll">
+        <figure>
+            <img src="https://i.postimg.cc/3JNMzZBX/02.jpg" alt="">
+            <article>
+                <span class="padding_1x">
+                    <h2 class="cursive">Shuttles</h2>
+                    <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </span>
+            </article>
+        </figure>
+    </section>
+    <section class="flex-content padding_1x inline-photo show-on-scroll">
+        <figure>
+            <img src="https://i.postimg.cc/WbyRVJWQ/03.jpg" alt="">
+            <article>
+                <span class="padding_1x">
+                    <h2 class="cursive">Home Stays</h2>
+                    <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </span>
+            </article>
+        </figure>
+    </section>
+    <section class="flex-content padding_1x inline-photo show-on-scroll">
+        <figure>
+            <img src="https://i.postimg.cc/13Vk35b4/04.jpg" alt="">
+            <article>
+                <span class="padding_1x">
+                    <h2 class="cursive">Activities & Attractions</h2>
+                    <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </span>
+            </article>
+        </figure>
+    </section>
+    <section class="flex-content padding_1x inline-photo show-on-scroll">
+        <figure>
+            <img src="https://i.postimg.cc/LsdrYFMD/05.jpg" alt="">
+            <article>
+                <span class="padding_1x">
+                    <h2 class="cursive">Car Rentals</h2>
+                    <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </span>
+            </article>
+        </figure>
+    </section>
+</div>
+
+<!--FOOTER-->
+<footer class="padding_1x">
+    <article>
+        <img src="Black_Illustrated_Travel_Logo__1_-removebg-preview.png" alt="" class="logo">
+    </article>
+    <article class="flex">
+        <a href="#">Terms & conditions</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Cookie policy</a>
+        <a href="#">Raise a ticket</a>
+    </article>
+    <article>
+        <p>© 2024 website name || All rights reserved</p>
+    </article>
+</footer>
+
+<!--JAVASCRIPT-->
+<!--PLUGIN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
